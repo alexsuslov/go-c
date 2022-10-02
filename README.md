@@ -1,6 +1,19 @@
 # go-c
+```
+package main
 
 import "C"
+import "fmt"
+
+func main() {
+	fmt.Println("Starting...")
+}
+```
+run 
+```
+./app
+```
+exec error
 
 ```
 /app # ldd app 
@@ -10,4 +23,14 @@ import "C"
 
 ```
 
-add 
+add to Dockerfile
+
+```
+RUN apk add gcompat
+```
+
+./app
+Starting...
+
+
+
